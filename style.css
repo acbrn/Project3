@@ -1,0 +1,199 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1,
+h2,
+h3,
+blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: transparent;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+blockquote p {
+  color: black;
+  background-color: transparent;
+  font-size: 4rem;
+  display: inline;
+  line-height: 1;
+}
+
+.left {
+  grid-column: 6 / 12;
+}
+
+/* Projects Styles */
+
+.project-title {
+  font-size: 5rem;
+  border-bottom: 5px var(--quad-color) solid;
+  text-shadow: rgb(0, 0, 0) 1px 5px 10px;
+  color: #ffffff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 20px;
+  margin: 3px;
+}
+
+.project-card {
+  padding: 1rem;
+  border: 5px solid var(--secondary-color);
+  border-radius: 25px;
+  box-shadow: 4px 4px 8px var(--quad-color);
+}
+.project-card.blur {
+  filter: blur(5px);
+}
+
+.cat-name-name {
+  font-size: xx-large;
+  text-shadow: rgb(0, 0, 0) 1px 5px 10px;
+  color: #ffffff;
+}
+
+.cat-name-descrip {
+  margin-top: 1rem;
+  font-size: larger;
+}
+
+.cat-name-link {
+  text-align: center;
+  color: #ffffff;
+  font-size: large;
+}
+
+.link-site,
+.link-github {
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
+  border-bottom: 3px solid #020202;
+}
+
+.link-site:hover,
+.link-github:hover {
+  color: var(--secondary-color);
+}
+
+.link-github svg {
+  margin-right: 0.5rem;
+}
+
+/* Footer Styles */
+
+footer {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-top: var(--spacing);
+}
+
+/* Three.js Styles */
+
+.form-control {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--quad-color);
+  background-color: var(--dark-bg);
+  color: white;
+  outline: none;
+  resize: none;
+}
+
+.form-control.success input,
+.form-control.success textarea {
+  border-color: var(--success-color);
+}
+
+.form-control.error input,
+.form-control.error textarea {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--error-color);
+  font-size: 0.75rem;
+}
+
+#contact-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  background: var(--dark-bg);
+  border-radius: 10px;
+  z-index: 1000;
+}
